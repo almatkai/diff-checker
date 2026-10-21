@@ -3,7 +3,7 @@
   "name": "diff-checker",
   "title": "Diff Checker",
   "description": "Compare content of two texts",
-  "icon": "icon.png",
+  "icon": "assets/icon.png",
   "author": "almatkai",
   "contributors": [
     "hayk_hayrapetian"

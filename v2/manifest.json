@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.diff-checker",
+  "slug": "diff-checker",
+  "name": "Diff Checker",
+  "version": "0.1.0",
+  "description": "Offline text and JSON comparisons. Original author: destiner; contributor: hayk_hayrapetian; own V1 and Rust port: almatkai.",
+  "icon": "/extensions/icons/diff-checker.png",
+  "runtime": "rust",
+  "replaces": [
+    "raycast.diff-checker"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "commands": [
+    {
+      "name": "check-diff",
+      "title": "Check Diff",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "runtime": "rust"
+    },
+    {
+      "name": "compare-json",
+      "title": "Compare JSON",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "runtime": "rust"
+    }
+  ],
+  "verification": [
+    {
+      "platform": "macOS",
+      "state": "not-run",
+      "note": "Real OS UI, keyboard and clipboard verification has not been run."
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run",
+      "note": "Real OS UI, keyboard and clipboard verification has not been run."
+    }
+  ]
+}

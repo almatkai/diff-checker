@@ -1,0 +1,22 @@
+[package]
+name = "tezbar-diff-checker"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT AND BSD-3-Clause AND Apache-2.0"
+repository = "https://github.com/almatkai/diff-checker"
+description = "Compiled-in Native V2 Diff Checker, with pinned source parity fixtures"
+include = ["/src/**", "/examples/**", "/tests/**", "/fixtures/**", "/Cargo.toml", "/Cargo.lock", "/README.md", "/LICENSE*", "/NOTICE*", "/manifest.json", "/provenance.json", "/verification.json", "/tools/package.json", "/tools/package-lock.json", "/tools/oracle.mjs", "/tools/ui.mjs", "/tools/verify.py", "/tools/check-package.py"]
+
+[dependencies]
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+ryu-js = "=1.0.2"
+getrandom = "=0.2.16"
+
+[dev-dependencies]
+tokio = { version = "=1.44.2", features = ["macros", "rt-multi-thread", "sync"] }
+tempfile = "=3.19.1"
+log = "=0.4.27"
+tauri = { path = "tests/tauri-stub" }
+diff-checker-beta-host = { path = "tests/beta-host" }

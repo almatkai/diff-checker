@@ -1,0 +1,10 @@
+[package]
+name = "tauri"
+version = "0.0.0"
+edition = "2021"
+license = "Apache-2.0"
+[dependencies]
+serde = "=1.0.228"
+
+[lib]
+path = "../../fixtures/harness/tauri.rs"

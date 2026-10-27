@@ -1,0 +1,800 @@
+{
+  "own": {
+    "repository": "https://github.com/almatkai/diff-checker",
+    "commit": "b9a47b252ba9f8704bd83802ede71f407de27c49",
+    "license": "MIT"
+  },
+  "raycast": {
+    "repository": "https://github.com/raycast/extensions",
+    "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+    "path": "extensions/diff-checker",
+    "author": "destiner",
+    "contributors": [
+      "hayk_hayrapetian"
+    ],
+    "license": "MIT",
+    "licensePath": "fixtures/raycast/ROOT-LICENSE"
+  },
+  "beta": {
+    "repository": "https://github.com/almatkai/Tezbar",
+    "commit": "fd300e276356587726566026f072563eb9c34cb1",
+    "license": "Apache-2.0"
+  },
+  "diff": {
+    "name": "diff",
+    "version": "8.0.3",
+    "url": "https://registry.npmjs.org/diff/-/diff-8.0.3.tgz",
+    "integrity": "sha512-qejHi7bcSD4hQAZE0tNAawRK1ZtafHDmMTMkrrIGgSLl7hTnQHmKCeB45xAcbfTqK2zowkM3j3bHt/4b/ARbYQ==",
+    "license": "BSD-3-Clause",
+    "note": "The actual pinned npm package is BSD-3-Clause, not MIT; retain its exact LICENSE."
+  },
+  "icon": {
+    "source": "fixtures/own/assets/icon.png",
+    "bytes": 201232,
+    "sha256": "5ffb435db77bbfb870dae78abdf32dc641cd83a2704b130a5b574e55dca580b6",
+    "destination": "src/renderer/public/extensions/icons/diff-checker.png",
+    "url": "/extensions/icons/diff-checker.png"
+  },
+  "files": {
+    "fixtures/beta/LICENSE": {
+      "bytes": 10750,
+      "sha256": "0ed6b1b2760294d4aaaa45be38e166fcc0168e1dd5190423c096fcbe1c94afbf"
+    },
+    "fixtures/beta/docs/NATIVE_V2_FORMAT.md": {
+      "bytes": 2593,
+      "sha256": "8bf9315ad047326dd6737587ca5491fc35faf5e3f92a2d9c63f596be0c8f7b7a"
+    },
+    "fixtures/beta/package.json": {
+      "bytes": 2909,
+      "sha256": "a9e41304960cd456d9f0b223110cd3abfd012c8899fa703acacee6b0d719faf7"
+    },
+    "fixtures/beta/pnpm-lock.yaml": {
+      "bytes": 158612,
+      "sha256": "9ea96c8e56c802695899d7014a573fadff8a37fd665fa71225526bd41b659bfc"
+    },
+    "fixtures/beta/schemas/extension-v2.schema.json": {
+      "bytes": 2420,
+      "sha256": "6d5afda1b652605982104bdf16d1547547b98dfd707a7b2969316406c49f32af"
+    },
+    "fixtures/beta/src/renderer/colorConverter.ts": {
+      "bytes": 8654,
+      "sha256": "3ed3ae957716fe53918b20ed7c723088d7b95b4533beb1fd18fd9d7ad421202e"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/action-runtime-overlay.tsx": {
+      "bytes": 2915,
+      "sha256": "3eb4a59db0de59460ea8a2c7f4a1f6ec5b514a512f49352bf373db64ed58d604"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/action-runtime-registry.tsx": {
+      "bytes": 692,
+      "sha256": "ffbad6f70410c6d2dcf4af217abe4ab297d69c0cae2c993263c008a423175e16"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/action-runtime.tsx": {
+      "bytes": 391,
+      "sha256": "6e7a41e3d1a7ee2028103683f08fb8ed20e4b2e5751e182afe9f8e189522a28b"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/detail-runtime.test.ts": {
+      "bytes": 1028,
+      "sha256": "94acca3393a3636f7188a2ceac4a5e0429c2a0bc3433b02163602bdbe38beef4"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/detail-runtime.tsx": {
+      "bytes": 23478,
+      "sha256": "32eecb50891e0f282bd3d78d8a38193ec24540bf70c3fdc8e43a1d368c97d54c"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/form-runtime.test.ts": {
+      "bytes": 3876,
+      "sha256": "3c449509be65d1ffc8949a11835fadeb6300b7d647898309b5abc5b2e94af112"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/form-runtime.tsx": {
+      "bytes": 21087,
+      "sha256": "8568d0ac5be03eea97d0def38067dbbbdce5ae97c36a51024857ef20dce299a6"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/grid-content.ts": {
+      "bytes": 761,
+      "sha256": "71cf7151e1986389b550cf5a069383af79b88de2726176859496ac40fd8d9d41"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/grid-runtime.tsx": {
+      "bytes": 15804,
+      "sha256": "9c19dffaf9596814315f61d8a66eaa3b914a138d8f10c860e01efd245d3e2e5b"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/hooks.ts": {
+      "bytes": 4050,
+      "sha256": "50bb0c3ad3721f600abe3091f3adba1c6515c2d639356b20c94c7f5cc96a492b"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/index.tsx": {
+      "bytes": 7419,
+      "sha256": "7fc8413a72b92e8f88b0939cd93f91624018fe0765baa1e71b38b86f8cc77a64"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/ipc-bridge.ts": {
+      "bytes": 1110,
+      "sha256": "17784548760d476efebeae36d5b03e9c50a69c2da2b92ce0163cabbfe9566d97"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/list-runtime.tsx": {
+      "bytes": 32174,
+      "sha256": "c7e253c34ce6e0a5132cab96bf1f0388393faca79ff57c3fdc7956f377a0ab0f"
+    },
+    "fixtures/beta/src/renderer/src/raycast-api/native-v2-visuals.test.ts": {
+      "bytes": 3347,
+      "sha256": "afa00333ff5293015fc1d6c87dc429ef9fdb6322a89887c6ad7b6b5b49fcb182"
+    },
+    "fixtures/beta/src/renderer/ui/Markdown.tsx": {
+      "bytes": 7492,
+      "sha256": "d205312b35293a433d5398e4edf1dcc96662cacd34036e8ee3ec503f65eee2de"
+    },
+    "fixtures/beta/src/renderer/ui/primitives.tsx": {
+      "bytes": 10545,
+      "sha256": "0bcedb2a1158a00ae7d4237f6ee875a58d9496e8576fb72ac78b79af82365044"
+    },
+    "fixtures/beta/src/shared/extensionRuntime.ts": {
+      "bytes": 3838,
+      "sha256": "837b804856baa6b16ebda080920af456268fefcffa7a1c3e2964b95d697ee387"
+    },
+    "fixtures/beta/src-tauri/src/native_core/common.rs": {
+      "bytes": 7627,
+      "sha256": "280a0a2f0dd04a8570b320aafc0c3ece0f5de8ddb21c363645567d6a35d84da7"
+    },
+    "fixtures/beta/src-tauri/src/native_core/extensions/native.rs": {
+      "bytes": 14551,
+      "sha256": "3192be6beccc110cd6daa22db412e0f90685957ec51b3c71103b78e239978691"
+    },
+    "fixtures/beta/src-tauri/src/native_core/extensions/native_tests.rs": {
+      "bytes": 23475,
+      "sha256": "75c4bf5ec47d0d64d3d8e51db0989e708d1474b1bb41a667098bd645394145fc"
+    },
+    "fixtures/beta/src-tauri/src/native_core/extensions/v2_runtime.rs": {
+      "bytes": 3110,
+      "sha256": "df96675ba916a3d70b8e0e5da76f7a9422d238cc3fbe3a5a6178fef21662a6a0"
+    },
+    "fixtures/beta/src-tauri/src/native_core/extensions/v2_sdk.rs": {
+      "bytes": 6755,
+      "sha256": "4f987346f863db9a7bd6aa1d5a99e149925dc69a44d629727ccc80a567cd27c2"
+    },
+    "fixtures/beta/src-tauri/src/native_core/launcher/clipboard.rs": {
+      "bytes": 32045,
+      "sha256": "b76fc181e2685d5025a117fc2b53d8c166dc32cdded4651359d42c5bb78a6706"
+    },
+    "fixtures/beta/src-tauri/src/native_core/platform.rs": {
+      "bytes": 28906,
+      "sha256": "75fa7ce4204edbbdb0f4a5410895b32239939b707256c484dc3c4f9de390b5a1"
+    },
+    "fixtures/build/Cargo.lock": {
+      "bytes": 11911,
+      "sha256": "5e5e1e5019fded38670f9789f1eafbc16df6e3342de16da3491d76b0460b50f4"
+    },
+    "fixtures/diff-8.0.3/package/CONTRIBUTING.md": {
+      "bytes": 984,
+      "sha256": "631a4fc8145f86c901b137ee7d9a96a41c7536e311c9ac6aec80d0cda8efa3ab"
+    },
+    "fixtures/diff-8.0.3/package/LICENSE": {
+      "bytes": 1546,
+      "sha256": "eda81a415869e67809f6a9f3fd6056062cb83a462118e07eec5e92b2e0c40ce9"
+    },
+    "fixtures/diff-8.0.3/package/README.md": {
+      "bytes": 29130,
+      "sha256": "2967000f5f1a5aa0348bc818d996d6ed17e5301a88cafdc484b377cc93b8a569"
+    },
+    "fixtures/diff-8.0.3/package/dist/diff.js": {
+      "bytes": 82084,
+      "sha256": "6ce1aa17934fb190adf9c0509bc9a0bc12d8f313549001aa9296b94f8c96b6ea"
+    },
+    "fixtures/diff-8.0.3/package/dist/diff.min.js": {
+      "bytes": 29785,
+      "sha256": "83f6d018ddc2d07fb65527496d0b3789433fcbe33913eaaa068936f598f04d64"
+    },
+    "fixtures/diff-8.0.3/package/eslint.config.mjs": {
+      "bytes": 5395,
+      "sha256": "701aca397f6a2842dda8f0cdfaeb732b90e1617336f75aa09078abd69e940e8d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/dmp.d.ts": {
+      "bytes": 388,
+      "sha256": "c49a2c2b75a2c37ee620759e00517d2a5b37231432e6606cbb9a6493591eb6c5"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/dmp.d.ts.map": {
+      "bytes": 334,
+      "sha256": "5262035a6160dc4a684530b9d103fa814862ecbfd721c5024c0367d909bfe9d6"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/dmp.js": {
+      "bytes": 699,
+      "sha256": "2dbdc729d4e33b203a7626a8873e09e610a94ddaf4556c5238374d74eac7410e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/xml.d.ts": {
+      "bytes": 240,
+      "sha256": "b342336b75a5615111f5dba9bfefe4329015473c3fb61c1fb3d9257457aac201"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/xml.d.ts.map": {
+      "bytes": 243,
+      "sha256": "918618579cd70597d08cf7ce493013958ffbc0af79039a35fc24ce2ca8b3780a"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/convert/xml.js": {
+      "bytes": 898,
+      "sha256": "cec51df4a209d2d2a409daf9ef5e611b4ca49e17783be47c515b7107f3e35a58"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/array.d.ts": {
+      "bytes": 1287,
+      "sha256": "0a5634f7bbf1e77f453a8469795472ceef410f9a2a6902a38e830ee997e11aad"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/array.d.ts.map": {
+      "bytes": 1307,
+      "sha256": "2d035d34ce7c9f6ed87f20ee3fe98e4a2aaab1d0013cf8971110b1bbb5823bda"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/array.js": {
+      "bytes": 1577,
+      "sha256": "09a034f96fc23827d69cfd8dc68a76d9fb8e333461ea9c7bd192bbd883dbbf11"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/base.d.ts": {
+      "bytes": 1460,
+      "sha256": "14cad32342459938e4dc3e43290c21815e8c50ff9987fbb6a707c20fab488a0c"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/base.d.ts.map": {
+      "bytes": 1440,
+      "sha256": "f2586bf2f20ca3b260123b444adb5e7f8155c9f32346de79c15bed91b9e8035c"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/base.js": {
+      "bytes": 12666,
+      "sha256": "8529cc7b3ded5b035da7edc4c50c82e3d624df01e436b7fc370416ad95ddb7a0"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/character.d.ts": {
+      "bytes": 1317,
+      "sha256": "4bd23b962c6702f2d842017b6fcbe35d63899e4524ff6af4facc74598c113522"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/character.d.ts.map": {
+      "bytes": 964,
+      "sha256": "b67af1c7447f40ea9f095bedcb148e97323cdac1af17ef42029ae2ece85c8ed2"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/character.js": {
+      "bytes": 1350,
+      "sha256": "3576be020bb96d076d2129d9fb64b0fcad0a51ff5c55adc9d4c7c6916f610f95"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/css.d.ts": {
+      "bytes": 1163,
+      "sha256": "60bd054853cda7ee357f147bf903e2f88cd78a9b3e37732c218a3493ae226986"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/css.d.ts.map": {
+      "bytes": 981,
+      "sha256": "cda76c7d614cca884b2548d7db489c7d273add402d252281130249f0c8c3dd16"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/css.js": {
+      "bytes": 1400,
+      "sha256": "020c65aebad5c885f685a89b51f1a11465c1553a8855f51a5e116e4caf8733c3"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/json.d.ts": {
+      "bytes": 1995,
+      "sha256": "fdd3335862781599d7de3dc5659b5a8135aa3954b9c1492723432bc0d484e85e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/json.d.ts.map": {
+      "bytes": 1551,
+      "sha256": "5d574296d689bab498fad7bd5d68f85e726cc670bb8d8893358b418e1b81f997"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/json.js": {
+      "bytes": 4358,
+      "sha256": "9a1a6236f5d3a8f03d9988eb7d3cad5b684397aa2b3522552bc743973407d70d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/line.d.ts": {
+      "bytes": 2158,
+      "sha256": "8e7155b1873201785456300ffcdd7f0bcc869f995b7df50ad27ea33740b122a3"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/line.d.ts.map": {
+      "bytes": 1749,
+      "sha256": "ce4b4da26c3d142302d7d4961995f8783d795958036f336ddb9c6131122aad21"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/line.js": {
+      "bytes": 3834,
+      "sha256": "f67389d2fbe9522cae247aaa9fce05250f1c19196c93a4a4d5f3bf06469b5af7"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/sentence.d.ts": {
+      "bytes": 1838,
+      "sha256": "d449145a9a77065e6438e42469cad4ddb83b92c53be6ec94ad2a87b21be3249e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/sentence.d.ts.map": {
+      "bytes": 1000,
+      "sha256": "02ba8e2ccc9dbc51dd466151d13120fa66bc44ddf2d8f3b5160b554c26d7b10e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/sentence.js": {
+      "bytes": 3064,
+      "sha256": "95a8abfa3db14d2cf4f0b440cde9cd3c102deeba8da8dd7217e81c0abc031251"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/word.d.ts": {
+      "bytes": 2731,
+      "sha256": "3f34c292613d80c8efdc20534366cd9cb08ff7cb60c92bef5658826ee095bc69"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/word.d.ts.map": {
+      "bytes": 1966,
+      "sha256": "3c3204486a389f41962092e338d3e8f0bf382d74fb535eb62f8242d91a6a4f55"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/diff/word.js": {
+      "bytes": 16692,
+      "sha256": "62502a8dc79f477ebbd7434cf2d531ed56bbf9b35850fc49dfbc61f399816f14"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/index.d.ts": {
+      "bytes": 2869,
+      "sha256": "c3ee2fb2465660509cd53a26c5fa8df4b5f4d8d34d84f8c58b77656d714ad4a8"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/index.d.ts.map": {
+      "bytes": 2027,
+      "sha256": "198e22bfb5f5c3d5e46227a817f4d3019bbcd86267f87b2df537854b8dd992d2"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/index.js": {
+      "bytes": 5881,
+      "sha256": "ed9fa05cfc3115e1f4a599641ba05bc1fbdffb1f3a12629dafd09ac6b6d84c64"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/package.json": {
+      "bytes": 39,
+      "sha256": "560ea6123d6cdf8e30c003ddb5f9cbcc8b4343df27eeb46cecdc645782aa67b4"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/apply.d.ts": {
+      "bytes": 4702,
+      "sha256": "688962814dc9d6a47ba11ec5ded89fb6cc7e82a4390c23d51e6f479f80760049"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/apply.d.ts.map": {
+      "bytes": 1023,
+      "sha256": "4a1f620f1a25e7ddd7a3f6537e5c0ebd56c9f023514f8de2fdfa1d8bf16dafa0"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/apply.js": {
+      "bytes": 13530,
+      "sha256": "33dc374d50822943ad497a595b4c7615a8a3721a9090f2f86db62e194c7fa223"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/create.d.ts": {
+      "bytes": 8703,
+      "sha256": "83f4ce03f3779bd3c5973c3b2d4a72dfd24fa3ff1f031675b7e305543e098003"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/create.d.ts.map": {
+      "bytes": 4788,
+      "sha256": "6cc98e95ea4658eee098f486e214f947484aec92cc0e13882a96d0af12f22d78"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/create.js": {
+      "bytes": 10578,
+      "sha256": "ee198e219d6ad27984120c208aded70fc4d4b862924c35b85e301360216c3fef"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/line-endings.d.ts": {
+      "bytes": 1034,
+      "sha256": "0eb5ff25a78fcc2a2088e0f28e36dfffce1a83a0accb6ed903f8b81f3964c14c"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/line-endings.d.ts.map": {
+      "bytes": 731,
+      "sha256": "166e856902edd31382a590d19c99584dbcc2482ae70270699e5da797741b2ad4"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/line-endings.js": {
+      "bytes": 3108,
+      "sha256": "c7bbcd72d8fc604d4be20738561d380006a236bbcd9217cdeaef7a9e1fca0bcd"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/parse.d.ts": {
+      "bytes": 366,
+      "sha256": "cd16697aef969e23d590a712b0c7e943630f7515f3592d71545b21d13de4c31d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/parse.d.ts.map": {
+      "bytes": 230,
+      "sha256": "a01c4c68d8a8f80572091ef606928305b5cf13f0416a053ccfbc72b74d6ec162"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/parse.js": {
+      "bytes": 6317,
+      "sha256": "70730e44cca4fa172c35e51b793508cc6ed25d86bc2fd711ff93f08f4dc914ba"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/reverse.d.ts": {
+      "bytes": 636,
+      "sha256": "c2deae73969f6a13e1347d01754d9b5d9a6ed3f8ab5574f90435ee5f1bfb6616"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/reverse.d.ts.map": {
+      "bytes": 372,
+      "sha256": "1a4a6bb6d519da5839ba844b9dc00dc7decb807dc0e8f0e0dd7b27c62bd5299d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/patch/reverse.js": {
+      "bytes": 1609,
+      "sha256": "4113bedc10ee730295ca8b61b2cad367df6ec7a241db27e6b513a2a20654d67f"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/types.d.ts": {
+      "bytes": 12643,
+      "sha256": "f4c6ab477fe710f67f66c55a81f9ca7ac4398cdbac73b5ca38a904a8f342957d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/types.d.ts.map": {
+      "bytes": 3734,
+      "sha256": "ead946904b8add894b6f189012b3bb41af2e8542951c47021506f668759cc692"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/types.js": {
+      "bytes": 77,
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/array.d.ts": {
+      "bytes": 178,
+      "sha256": "9b181c0e2b265d7c12205426643b366e7850e789dd9cdf48dd2452fe806e148d"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/array.d.ts.map": {
+      "bytes": 277,
+      "sha256": "ed0fe147615d1348c03b2d7f4433f900fde05a1a0abbeb841da2d8f1d3043071"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/array.js": {
+      "bytes": 529,
+      "sha256": "6963ee011977b2b1bfe04407ba51f23dc990e0957f3bdbdde2d6d3603ae0541e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/distance-iterator.d.ts": {
+      "bytes": 148,
+      "sha256": "be1a5aebf79d0f7739f8c27a65393a23723535f39de3ab62ab088d22937bf9a7"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/distance-iterator.d.ts.map": {
+      "bytes": 247,
+      "sha256": "d937c682f41787763b5f7ce5d19072e9a12c32c985554e2755106a4be22572a5"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/distance-iterator.js": {
+      "bytes": 1587,
+      "sha256": "8eadec2b70e19d8a3d8eeac0fcb47d0c231672925296ee65fdf8ec34876021c5"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/params.d.ts": {
+      "bytes": 163,
+      "sha256": "90b80eea50f29206d12cff5377a443c97b69c0f0f766edf78b5e5b8d90903b83"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/params.d.ts.map": {
+      "bytes": 272,
+      "sha256": "af149eeab485d9ce8a49deba23ff42717d672acc81a939c4bbab97166a2a5f34"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/params.js": {
+      "bytes": 521,
+      "sha256": "b0beab18375d35253fb5393de39fc529df3cb8cf071762e8fb4a174be5f2d1d2"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/string.d.ts": {
+      "bytes": 1061,
+      "sha256": "fb63957a20a43dcd25a02e5d58179af397de30088086e289219a6e703b396d78"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/string.d.ts.map": {
+      "bytes": 909,
+      "sha256": "7ff82564c08a7a5f2272d93a02a659b0931198127985c01daafd34357e1f0d4e"
+    },
+    "fixtures/diff-8.0.3/package/libcjs/util/string.js": {
+      "bytes": 5122,
+      "sha256": "ab23a3de73a75365cfb3c5788818e935f2935e357bff19c500ee0035288a9054"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/dmp.d.ts": {
+      "bytes": 388,
+      "sha256": "c49a2c2b75a2c37ee620759e00517d2a5b37231432e6606cbb9a6493591eb6c5"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/dmp.d.ts.map": {
+      "bytes": 334,
+      "sha256": "5262035a6160dc4a684530b9d103fa814862ecbfd721c5024c0367d909bfe9d6"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/dmp.js": {
+      "bytes": 580,
+      "sha256": "05bad2211249703a43f2d4250fb0e0831511a32aed763cd21890c1b5ee7032c4"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/xml.d.ts": {
+      "bytes": 240,
+      "sha256": "b342336b75a5615111f5dba9bfefe4329015473c3fb61c1fb3d9257457aac201"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/xml.d.ts.map": {
+      "bytes": 243,
+      "sha256": "918618579cd70597d08cf7ce493013958ffbc0af79039a35fc24ce2ca8b3780a"
+    },
+    "fixtures/diff-8.0.3/package/libesm/convert/xml.js": {
+      "bytes": 781,
+      "sha256": "c9dfceeb2ab8248f6dee37f0ce253317939fe1302ffb4483ccf777400a3ac552"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/array.d.ts": {
+      "bytes": 1287,
+      "sha256": "0a5634f7bbf1e77f453a8469795472ceef410f9a2a6902a38e830ee997e11aad"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/array.d.ts.map": {
+      "bytes": 1307,
+      "sha256": "2d035d34ce7c9f6ed87f20ee3fe98e4a2aaab1d0013cf8971110b1bbb5823bda"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/array.js": {
+      "bytes": 370,
+      "sha256": "5bcc1320c7ee74e565421a556d81ed3fdd82ff2f366e6151beebac6b425f528f"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/base.d.ts": {
+      "bytes": 1460,
+      "sha256": "14cad32342459938e4dc3e43290c21815e8c50ff9987fbb6a707c20fab488a0c"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/base.d.ts.map": {
+      "bytes": 1440,
+      "sha256": "f2586bf2f20ca3b260123b444adb5e7f8155c9f32346de79c15bed91b9e8035c"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/base.js": {
+      "bytes": 12008,
+      "sha256": "faa81734df6ea7f8034efc5572ad1bbf19c50b300fdd183baf0d7813c5eec3b2"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/character.d.ts": {
+      "bytes": 1317,
+      "sha256": "4bd23b962c6702f2d842017b6fcbe35d63899e4524ff6af4facc74598c113522"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/character.d.ts.map": {
+      "bytes": 964,
+      "sha256": "b67af1c7447f40ea9f095bedcb148e97323cdac1af17ef42029ae2ece85c8ed2"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/character.js": {
+      "bytes": 228,
+      "sha256": "75677c2b3c5990099675493b415ce59f92f5de4709de59fa481b9fb563168deb"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/css.d.ts": {
+      "bytes": 1163,
+      "sha256": "60bd054853cda7ee357f147bf903e2f88cd78a9b3e37732c218a3493ae226986"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/css.d.ts.map": {
+      "bytes": 981,
+      "sha256": "cda76c7d614cca884b2548d7db489c7d273add402d252281130249f0c8c3dd16"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/css.js": {
+      "bytes": 275,
+      "sha256": "db85fa43d4e4d4bbe3707d9e575de338589deb9a4cc8243c7f15fa5e2c87724d"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/json.d.ts": {
+      "bytes": 1995,
+      "sha256": "fdd3335862781599d7de3dc5659b5a8135aa3954b9c1492723432bc0d484e85e"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/json.d.ts.map": {
+      "bytes": 1551,
+      "sha256": "5d574296d689bab498fad7bd5d68f85e726cc670bb8d8893358b418e1b81f997"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/json.js": {
+      "bytes": 2914,
+      "sha256": "c97ec8c04a7c4fc37a605d5863018ead1cac1c19128a7333bcb19d33fa6771b7"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/line.d.ts": {
+      "bytes": 2158,
+      "sha256": "8e7155b1873201785456300ffcdd7f0bcc869f995b7df50ad27ea33740b122a3"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/line.d.ts.map": {
+      "bytes": 1749,
+      "sha256": "ce4b4da26c3d142302d7d4961995f8783d795958036f336ddb9c6131122aad21"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/line.js": {
+      "bytes": 2629,
+      "sha256": "e3ef2d8c8c3a56f6b9fb04609f545b2aae2f84a02c31c5de3201aef1b0545f90"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/sentence.d.ts": {
+      "bytes": 1838,
+      "sha256": "d449145a9a77065e6438e42469cad4ddb83b92c53be6ec94ad2a87b21be3249e"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/sentence.d.ts.map": {
+      "bytes": 1000,
+      "sha256": "02ba8e2ccc9dbc51dd466151d13120fa66bc44ddf2d8f3b5160b554c26d7b10e"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/sentence.js": {
+      "bytes": 1904,
+      "sha256": "dad3b5952b2d8f29d8a01618580661c1757ed0bcce5e2af969b17eff613ca93b"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/word.d.ts": {
+      "bytes": 2731,
+      "sha256": "3f34c292613d80c8efdc20534366cd9cb08ff7cb60c92bef5658826ee095bc69"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/word.d.ts.map": {
+      "bytes": 1966,
+      "sha256": "3c3204486a389f41962092e338d3e8f0bf382d74fb535eb62f8242d91a6a4f55"
+    },
+    "fixtures/diff-8.0.3/package/libesm/diff/word.js": {
+      "bytes": 14578,
+      "sha256": "264361c73c8625a5d135f3aeb6c64701273e5d32ac324f13514b6723b1ba2e59"
+    },
+    "fixtures/diff-8.0.3/package/libesm/index.d.ts": {
+      "bytes": 2869,
+      "sha256": "c3ee2fb2465660509cd53a26c5fa8df4b5f4d8d34d84f8c58b77656d714ad4a8"
+    },
+    "fixtures/diff-8.0.3/package/libesm/index.d.ts.map": {
+      "bytes": 2027,
+      "sha256": "198e22bfb5f5c3d5e46227a817f4d3019bbcd86267f87b2df537854b8dd992d2"
+    },
+    "fixtures/diff-8.0.3/package/libesm/index.js": {
+      "bytes": 1914,
+      "sha256": "b1f400fd24da44377867ede7ab847a34940423f8bbf3fc5475d8c7647759a2aa"
+    },
+    "fixtures/diff-8.0.3/package/libesm/package.json": {
+      "bytes": 37,
+      "sha256": "5e433a0d28d7f422b2c6fbc3058b931d19d29bdc49c154b312099680e992e3f5"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/apply.d.ts": {
+      "bytes": 4702,
+      "sha256": "688962814dc9d6a47ba11ec5ded89fb6cc7e82a4390c23d51e6f479f80760049"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/apply.d.ts.map": {
+      "bytes": 1023,
+      "sha256": "4a1f620f1a25e7ddd7a3f6537e5c0ebd56c9f023514f8de2fdfa1d8bf16dafa0"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/apply.js": {
+      "bytes": 12892,
+      "sha256": "f8096efdfda914e9b85a8cb270dfb1a57f0d483656368327c89b80098955589e"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/create.d.ts": {
+      "bytes": 8703,
+      "sha256": "83f4ce03f3779bd3c5973c3b2d4a72dfd24fa3ff1f031675b7e305543e098003"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/create.d.ts.map": {
+      "bytes": 4788,
+      "sha256": "6cc98e95ea4658eee098f486e214f947484aec92cc0e13882a96d0af12f22d78"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/create.js": {
+      "bytes": 9499,
+      "sha256": "c71772a9d9ce5933ed5848a33a2f8afaac1eff24430deb6d39cd34d676d80a84"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/line-endings.d.ts": {
+      "bytes": 1034,
+      "sha256": "0eb5ff25a78fcc2a2088e0f28e36dfffce1a83a0accb6ed903f8b81f3964c14c"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/line-endings.d.ts.map": {
+      "bytes": 731,
+      "sha256": "166e856902edd31382a590d19c99584dbcc2482ae70270699e5da797741b2ad4"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/line-endings.js": {
+      "bytes": 2334,
+      "sha256": "65af590b9426800782d692a7b1923ad1d6d6bbc1c74e9863053c6cfe1d97f3f4"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/parse.d.ts": {
+      "bytes": 366,
+      "sha256": "cd16697aef969e23d590a712b0c7e943630f7515f3592d71545b21d13de4c31d"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/parse.d.ts.map": {
+      "bytes": 230,
+      "sha256": "a01c4c68d8a8f80572091ef606928305b5cf13f0416a053ccfbc72b74d6ec162"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/parse.js": {
+      "bytes": 6218,
+      "sha256": "ace28c724776288617444bc9a2111b4b954e5bcae3be7ddb74b926a39b507c90"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/reverse.d.ts": {
+      "bytes": 636,
+      "sha256": "c2deae73969f6a13e1347d01754d9b5d9a6ed3f8ab5574f90435ee5f1bfb6616"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/reverse.d.ts.map": {
+      "bytes": 372,
+      "sha256": "1a4a6bb6d519da5839ba844b9dc00dc7decb807dc0e8f0e0dd7b27c62bd5299d"
+    },
+    "fixtures/diff-8.0.3/package/libesm/patch/reverse.js": {
+      "bytes": 1081,
+      "sha256": "3de415ad62332e04fc860a775303e989988306a1eb8587801b9db69d49c861d8"
+    },
+    "fixtures/diff-8.0.3/package/libesm/types.d.ts": {
+      "bytes": 12643,
+      "sha256": "f4c6ab477fe710f67f66c55a81f9ca7ac4398cdbac73b5ca38a904a8f342957d"
+    },
+    "fixtures/diff-8.0.3/package/libesm/types.d.ts.map": {
+      "bytes": 3734,
+      "sha256": "ead946904b8add894b6f189012b3bb41af2e8542951c47021506f668759cc692"
+    },
+    "fixtures/diff-8.0.3/package/libesm/types.js": {
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/array.d.ts": {
+      "bytes": 178,
+      "sha256": "9b181c0e2b265d7c12205426643b366e7850e789dd9cdf48dd2452fe806e148d"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/array.d.ts.map": {
+      "bytes": 277,
+      "sha256": "ed0fe147615d1348c03b2d7f4433f900fde05a1a0abbeb841da2d8f1d3043071"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/array.js": {
+      "bytes": 390,
+      "sha256": "8bbc0246a6d709eb776531a7a2062066a77916643364945c1a713a00eca33e46"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/distance-iterator.d.ts": {
+      "bytes": 148,
+      "sha256": "be1a5aebf79d0f7739f8c27a65393a23723535f39de3ab62ab088d22937bf9a7"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/distance-iterator.d.ts.map": {
+      "bytes": 247,
+      "sha256": "d937c682f41787763b5f7ce5d19072e9a12c32c985554e2755106a4be22572a5"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/distance-iterator.js": {
+      "bytes": 1487,
+      "sha256": "41e12ebbedb76278e3bd37ede510e009a5952897a3e748e9673b4e5c8ae660e5"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/params.d.ts": {
+      "bytes": 163,
+      "sha256": "90b80eea50f29206d12cff5377a443c97b69c0f0f766edf78b5e5b8d90903b83"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/params.d.ts.map": {
+      "bytes": 272,
+      "sha256": "af149eeab485d9ce8a49deba23ff42717d672acc81a939c4bbab97166a2a5f34"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/params.js": {
+      "bytes": 410,
+      "sha256": "bb76a1c299071b6f8314bb7195ad701af06f092c629aed8b4fef4a7474ab3759"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/string.d.ts": {
+      "bytes": 1061,
+      "sha256": "fb63957a20a43dcd25a02e5d58179af397de30088086e289219a6e703b396d78"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/string.d.ts.map": {
+      "bytes": 909,
+      "sha256": "7ff82564c08a7a5f2272d93a02a659b0931198127985c01daafd34357e1f0d4e"
+    },
+    "fixtures/diff-8.0.3/package/libesm/util/string.js": {
+      "bytes": 4615,
+      "sha256": "d4d9a0803ef12940fc9aa4854a83e79613e9acdd21a253841c7ab8e65a6cb8ad"
+    },
+    "fixtures/diff-8.0.3/package/package.json": {
+      "bytes": 3875,
+      "sha256": "35b083dc3430465fbe066129e12debeb5416474e1db71abf7a8db9997789aeed"
+    },
+    "fixtures/diff-8.0.3/package/release-notes.md": {
+      "bytes": 38046,
+      "sha256": "1281d7d009a7e2e6ce619b01d8031ca8c9fd6250ad11d6c3acdac29efeedb477"
+    },
+    "fixtures/harness/Cargo.beta-host.toml": {
+      "bytes": 444,
+      "sha256": "5e3793074753bbe97c51bf5a28f65a41779ed09b1bbdb58724e0e678aaa8454a"
+    },
+    "fixtures/harness/Cargo.tauri-stub.toml": {
+      "bytes": 165,
+      "sha256": "12ba285b7fc011ba35dbc75cecfcfc7bc60005bf5213d6f701fa8b95382354a7"
+    },
+    "fixtures/harness/beta-host.rs": {
+      "bytes": 471,
+      "sha256": "c77a706a1d0b4094ff8ef08b72fec18692e946d2662b00735b33b5224c0539c4"
+    },
+    "fixtures/harness/extensions.rs": {
+      "bytes": 1903,
+      "sha256": "04e89de0d8dbe0d21bb8576c85f561dc2fee43ccda8805355dabbd5659a94ada"
+    },
+    "fixtures/harness/tauri.rs": {
+      "bytes": 372,
+      "sha256": "4968420b7104ff9728a9acf0ac75ab0afe4045d0b5fb0dc9fe64fb5a561c9b05"
+    },
+    "fixtures/own/LICENSE": {
+      "bytes": 1087,
+      "sha256": "1d7dbdbcd4fe14dfa08334fab20bffad23c1290f195792a3a4420dadf9912f81"
+    },
+    "fixtures/own/assets/icon.png": {
+      "bytes": 201232,
+      "sha256": "5ffb435db77bbfb870dae78abdf32dc641cd83a2704b130a5b574e55dca580b6"
+    },
+    "fixtures/own/package-lock.json": {
+      "bytes": 118736,
+      "sha256": "b31d0ee19bb1538ba9b9532376d67b18291546b08478dc3f8a4918073ccdb721"
+    },
+    "fixtures/own/package.json": {
+      "bytes": 1815,
+      "sha256": "617c797865975314ee9e3305a02bb0d69c950866e4b91357a69b525e348c2c11"
+    },
+    "fixtures/own/src/check-diff.tsx": {
+      "bytes": 1298,
+      "sha256": "b20df5b0fb38349100e9126249a6af6de4a74ad81c0da8576720be3d78600a3e"
+    },
+    "fixtures/own/src/compare-json.tsx": {
+      "bytes": 2462,
+      "sha256": "d7b61ef55ced9cd13ef282c9a4073c7571035103074bb53044d4f23018c9e839"
+    },
+    "fixtures/own/src/components/DiffDetail.tsx": {
+      "bytes": 2026,
+      "sha256": "d89367d99e4d438d9db2bbe4f2ba96d6576da4aa74ade4a95f6233d2fcc1dbbc"
+    },
+    "fixtures/own/src/hooks/useJSONForm.ts": {
+      "bytes": 3519,
+      "sha256": "0795e022179966f95e0ac071a1fb86dcdf6e7873b69a314b4c2a5568898fa810"
+    },
+    "fixtures/own/src/lib/diff.ts": {
+      "bytes": 6361,
+      "sha256": "d30529ed77771623f5fd09a01b2778b6945b30c2a5ccc9c71b0148722b624f77"
+    },
+    "fixtures/own/src/lib/validate.ts": {
+      "bytes": 277,
+      "sha256": "0a3358f27277dd2c6f222036be52db2416f488b8247666ce3920aa05a251c400"
+    },
+    "fixtures/own/src/types.ts": {
+      "bytes": 244,
+      "sha256": "70d9fd88cf63130f6dcc0ed7b4236b8ba2a5304977180675c636b9342717eda9"
+    },
+    "fixtures/own/src/utils.ts": {
+      "bytes": 594,
+      "sha256": "13c73d54aa3425373b1aab902fec8cfd578c1ba23e2a8cc3095598a8f90273a9"
+    },
+    "fixtures/own/test/smoke.test.ts": {
+      "bytes": 454,
+      "sha256": "1e0eddfa0746cd8963a17c025e4d2c91860d0116f479d0331a1bed3c0ab9962a"
+    },
+    "fixtures/raycast/ROOT-LICENSE": {
+      "bytes": 1064,
+      "sha256": "7f727f8b20cdd0e65f84e70b9cac2fce337dcecee4dc88955eb012ea27f02755"
+    },
+    "fixtures/raycast/assets/icon.png": {
+      "bytes": 201232,
+      "sha256": "5ffb435db77bbfb870dae78abdf32dc641cd83a2704b130a5b574e55dca580b6"
+    },
+    "fixtures/raycast/package.json": {
+      "bytes": 1627,
+      "sha256": "fd3387d5cd33cd0112129edd02042aa9f42eb3e56c8f7f7fc7145fb3bebd5235"
+    },
+    "fixtures/raycast/src/check-diff.tsx": {
+      "bytes": 1298,
+      "sha256": "b20df5b0fb38349100e9126249a6af6de4a74ad81c0da8576720be3d78600a3e"
+    },
+    "fixtures/raycast/src/utils.ts": {
+      "bytes": 594,
+      "sha256": "13c73d54aa3425373b1aab902fec8cfd578c1ba23e2a8cc3095598a8f90273a9"
+    }
+  }
+}

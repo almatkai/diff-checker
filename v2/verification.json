@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-24",
+  "sourceCommit": "b9a47b252ba9f8704bd83802ede71f407de27c49",
+  "betaCommit": "fd300e276356587726566026f072563eb9c34cb1",
+  "automated": {
+    "rustStable": "pass",
+    "rust1.85.0": "pass",
+    "fmt": "pass",
+    "strictClippyAllTargets": "pass",
+    "windowsGnuCheckClippy": "pass",
+    "originalOracleComparisons": 10249,
+    "ownTsxAndBetaRenderer": "pass",
+    "fullSchemaFixtureIconLicenses": "pass",
+    "cargoAndExtractedPackage": "pass",
+    "disposableV1PnpmTestTypecheck": "pass",
+    "v1ByteAudit": "pass",
+    "rustTestCount": 15,
+    "toolchains": [
+      "rustc 1.98.0",
+      "rustc 1.85.0"
+    ],
+    "windowsGnuToolchains": [
+      "stable",
+      "1.85.0"
+    ],
+    "fixtureHashCount": 190,
+    "packageTests": "Cargo package verified, extracted stable and 1.85 all-target tests + original TS/TSX/render/schema oracles pass; archive self-contained using included original manifest/lock and harness templates.",
+    "gitPublication": "All fixtures enumerated by git ls-files --cached --others --exclude-standard, including npm dist; no force-add required."
+  },
+  "desktop": [
+    {
+      "platform": "macOS",
+      "state": "not-run",
+      "scope": "Real OS UI, keyboard shortcuts and clipboard"
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run",
+      "scope": "Real OS UI, keyboard shortcuts and clipboard"
+    }
+  ],
+  "testBindings": "Headless Tauri/registry/compiled-registration stubs; actual beta common.rs, v2_sdk.rs, native.rs and Form/Detail/Markdown code. No real OS clipboard/profile access."
+}

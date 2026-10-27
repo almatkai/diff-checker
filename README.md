@@ -22,3 +22,5 @@ Compare two JSON objects with a git-style diff view. Only changed lines are show
 - Swap action to flip original and modified
 - Paste from Clipboard action to quickly fill either field
 - Copy Full Diff, Copy Compact Diff, or Copy Formatted JSON from the result view
+
+[Native V2 Rust implementation and integration](v2/README.md).
